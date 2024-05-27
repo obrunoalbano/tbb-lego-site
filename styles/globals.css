@@ -52,16 +52,21 @@ body {
 }
 
 .section-reverse {
-  @apply flex-row-reverse; 
+  @apply lg:flex-row-reverse; 
 }
 
 .section-reverse .section-image {
-  @apply left-0;
+  @apply lg:left-0;
 }
 
 .section-reverse .section-content {
-  @apply pl-10 text-right;
-  direction: rtl;
+  @apply lg:pl-10 lg:text-right;
+}
+
+@media (min-width: 1024px) {
+  .section-reverse .section-content {
+    direction: rtl;
+  }
 }
 
 @layer utilities {
