@@ -20,8 +20,8 @@ const SubNav: React.FC<SubNavProps> = ( { visible, onClose } ) => {
             visible ? '-translate-y-0' : '-translate-y-full pointer-events-none'
           }`} style={{ transition: 'transform 300ms ease-in-out' }}>
             <div className='w-full lg:w-3/12'>
-                <div className='pl-4 pr-4 pt-4 lg:pl-24 lg:pr-14'>
-                    <div className="mb-10 flex items-center">
+                <div className='pt-4'>
+                    <div className="mb-8 flex items-center pl-4 pr-4 lg:mb-10 lg:pl-24 lg:pr-14">
                         <Logo />
                         <span className='block cursor-pointer ml-8' onClick={onClose}>
                             <Close />
@@ -29,8 +29,8 @@ const SubNav: React.FC<SubNavProps> = ( { visible, onClose } ) => {
                     </div>      
                     <NavActions type="vertical" exclude={excludeLinks}/>
                 </div>
-                <div className="">
-                    <div className="flex items-center mt-6 mb-6 lg:mt-10">
+                <div>
+                    <div className="flex items-center mt-8 mb-6 lg:mt-10">
                         <div className="w-4 h-px bg-gray-400 mr-4 lg:w-24"></div>
                         <div className="text-black text-lg">Themes</div>
                     </div>

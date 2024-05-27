@@ -21,7 +21,7 @@ const Slider: React.FC<SliderProps> = ( { title, video } ) => {
 	};
 
 	return (
-		<div className="relative h-[50vh] w-full flex flex-col justify-end mb-[230px] lg:mb-20 lg:h-screen">
+		<div className="relative h-[50vh] w-full flex flex-col justify-end mb-[230px] lg:mb-20 video-screen">
 			<video
 			ref={videoRef}
 			className="absolute top-0 left-0 w-full h-full object-cover"

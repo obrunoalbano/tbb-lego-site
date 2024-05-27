@@ -22,11 +22,12 @@ const NavActions: React.FC<NavActionsProps> = ( { type, exclude } ) => {
         <nav className='block'>
             <ul className={`flex ${type === 'vertical' ? 'flex-col' : 'flex-row items-center'}`}>
                 {content.map(({ title, url, icon }, index) => (
-                    <li key={index} className={`list-none flex ${type === 'vertical' ? 'flex-row items-center mb-4' : 'flex-col mx-2.5'} ${index === 0 && type != 'vertical' ? 'hidden lg:flex' : ''}`}>
+                    <li key={index} className={`relative group list-none flex ${type === 'vertical' ? 'flex-row items-center px-4 lg:pl-24 lg:pr-14 py-2' : 'flex-col mx-2.5'} ${index === 0 && type != 'vertical' ? 'hidden lg:flex' : ''}`}>
                         <div className={`${type === 'vertical' ? 'mr-4' : 'mx-auto'}`}>
                             {icon && renderIcon(icon)}
                         </div>
-                        <a className={`text-black hover:text-primary block ${type === 'vertical' ? 'text-xl' : 'text-xs mt-1.5'}`} href={url}>{title}</a>
+                        <a className={`text-black block ${type === 'vertical' ? 'text-xl' : 'hover:text-primary text-xs mt-1.5'}`} href={url}>{title}</a>
+                        <span className="absolute inset-0 bg-[#BBDCF5] transition-all duration-500 ease-in-out transform -translate-x-full group-hover:translate-x-0 -z-10" />
                     </li>
                 ))}
             </ul>

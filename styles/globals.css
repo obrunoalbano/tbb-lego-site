@@ -82,6 +82,9 @@ body {
   .section-reverse .sectiom-button {
     direction: ltr;
   }
+  .video-screen {
+    height: calc(100vh - 87px);
+  }
 }
 
 @layer utilities {
