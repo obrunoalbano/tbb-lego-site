@@ -17,24 +17,28 @@ Siga estas etapas para configurar o ambiente de desenvolvimento local:
 
    ```bash
    git clone https://github.com/seu-usuario/seu-projeto.git
+   ```
 
 
 2. Navegue até o diretório do projeto:
 
    ```bash
    cd seu-projeto
+   ```
 
 3. Instale as dependências do projeto:
 
    ```bash
    yarn install
+   ```
 
 ## Executando o Projeto
 
 Para iniciar o servidor de desenvolvimento, execute o seguinte comando
 
-  ```bash
-   yarn dev
+   ```bash
+   yarn install
+   ```
 
 Isso iniciará o servidor de desenvolvimento em http://localhost:3000.
 
