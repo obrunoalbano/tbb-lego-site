@@ -63,9 +63,24 @@ body {
   @apply lg:pl-10 lg:text-right;
 }
 
+.video-controls:hover {
+  @apply border-[#006CB7];
+}
+
+.video-controls:hover svg {
+  @apply fill-[#006CB7];
+}
+
+.video-controls:hover path {
+  @apply stroke-[#006CB7];
+}
+
 @media (min-width: 1024px) {
   .section-reverse .section-content {
     direction: rtl;
+  }
+  .section-reverse .sectiom-button {
+    direction: ltr;
   }
 }
 

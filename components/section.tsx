@@ -21,9 +21,9 @@ const Section: React.FC<SectionProps> = ({ data }) => {
     return (
         <div>
             <div className="border-b border-[#EE7500] px-4 py-1">
-                <div className="container mx-auto flex text-black justify-between">
+                <div className="container mx-auto lg:flex text-black justify-between">
                     <h2 className="text-xl uppercase tracking-widest">{data?.title}</h2>
-                    <p className="text-sm">{data?.subTitle}</p>
+                    <p className="text-sm text-right lg:text-left">{data?.subTitle}</p>
                 </div>
             </div>
             {data.content.map((item, index) => (
