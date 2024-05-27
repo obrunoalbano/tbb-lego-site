@@ -45,3 +45,8 @@ Isso iniciará o servidor de desenvolvimento em http://localhost:3000.
 ## Personalização
 
 Você pode personalizar a configuração do Tailwind CSS editando o arquivo tailwind.config.js. Consulte a documentação do Tailwind CSS para obter mais informações sobre personalização.
+
+
+## Deploy
+
+Deploy automatizado via Vercel, link do preview em

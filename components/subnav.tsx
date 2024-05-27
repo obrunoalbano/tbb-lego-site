@@ -41,9 +41,9 @@ const SubNav: React.FC<SubNavProps> = ( { visible, onClose } ) => {
             </div>
             <div className='w-full lg:w-9/12'>
                 <div className='grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 h-screen border-l border-gray-400'>
-                    {mainMenuLogos.map((item) => {
+                    {mainMenuLogos.map((item, index) => {
                         return (
-                            <div className='flex justify-center items-center border-r border-b border-gray-400 relative group'>
+                            <div key={index} className='flex justify-center items-center border-r border-b border-gray-400 relative group'>
                                 <div className="absolute inset-0 bg-cover bg-center bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" style={{ backgroundImage: 'url("bg-logos-texture.png")' }}></div>
                                 <div className='relative'>
                                     <Image src={item.image} alt={item.title} width={140} height={140}/>
