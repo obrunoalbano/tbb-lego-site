@@ -47,6 +47,21 @@ Isso iniciará o servidor de desenvolvimento em http://localhost:3000.
 Você pode personalizar a configuração do Tailwind CSS editando o arquivo tailwind.config.js. Consulte a documentação do Tailwind CSS para obter mais informações sobre personalização.
 
 
-## Deploy
+## Tecnologias Utilizadas no Projeto TBB Lego Site
 
-Deploy automatizado via Vercel, link do preview em
+### Next Js
+
+Next.js é um framework de React para construção de aplicações web modernas e eficientes.
+
+### TypeScript
+
+TypeScript é uma linguagem de programação que adiciona tipagem estática opcional ao JavaScript.
+
+### Tailwind CSS
+
+Tailwind CSS é uma biblioteca de classes CSS utilitárias que permite estilizar rapidamente componentes e layouts.
+
+### Vercel 
+
+Vercel é uma plataforma de hospedagem e deployment para projetos web.
+
