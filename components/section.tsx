@@ -2,6 +2,7 @@ import React from "react"
 import SectionContent from "./sectionContent";   
 
 interface ContentData {
+    id: string;
     title?: string;
     subTitle?: string;
     content: {
@@ -19,7 +20,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ data }) => {
     return (
-        <div>
+        <div id={data?.id}>
             <div className="border-b border-[#EE7500] px-4 py-1">
                 <div className="container mx-auto lg:flex text-black justify-between">
                     <h2 className="text-xl uppercase tracking-widest">{data?.title}</h2>

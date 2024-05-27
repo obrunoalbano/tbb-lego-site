@@ -17,7 +17,7 @@ const SubNav: React.FC<SubNavProps> = ( { visible, onClose } ) => {
 
     return (
         <div className={`fixed top-0 left-0 bg-white w-full h-full transition-transform transform flex flex-wrap z-50 overflow-auto ${
-            visible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+            visible ? '-translate-y-0' : '-translate-y-full pointer-events-none'
           }`} style={{ transition: 'transform 300ms ease-in-out' }}>
             <div className='w-full lg:w-3/12'>
                 <div className='pl-4 pr-4 pt-4 lg:pl-24 lg:pr-14'>
@@ -35,7 +35,7 @@ const SubNav: React.FC<SubNavProps> = ( { visible, onClose } ) => {
                         <div className="text-black text-lg">Themes</div>
                     </div>
                     <div className="pl-4 pr-4 lg:pl-24 lg:pr-24">
-                        <NavbarLinks type="vertical"/>
+                        <NavbarLinks type="vertical" onClose={onClose}/>
                     </div>
                 </div>
             </div>

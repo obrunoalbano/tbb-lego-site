@@ -10,9 +10,12 @@ const Navbar: React.FC = () => {
 
     // Função para alternar a visibilidade
     const toggleSubNav = () => {
-        console.log(isSub);
         setIsSub(!isSub);
     }
+
+    const closeSubNav = () => {
+        setIsSub(false);
+    };
 
     return (
         <nav className='flex items-center font-sans'>
@@ -20,8 +23,8 @@ const Navbar: React.FC = () => {
                 <div className="mx-auto"><NavIcon /></div>
                 <div className='block text-black text-xs mt-1.5'>Categories</div>
             </div>
-            <NavbarLinks/>
-            <SubNav visible={isSub} onClose={toggleSubNav}/>
+            <NavbarLinks onClose={closeSubNav}/>
+            <SubNav visible={isSub} onClose={closeSubNav}/>
         </nav>
     );
 };

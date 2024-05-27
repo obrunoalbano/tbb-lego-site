@@ -9,35 +9,35 @@ interface ContentItem {
 export const mainMenuLinks: { title: string; url: string }[] = [
     {
         title: 'Gifting',
-        url: '/'
+        url: '#gifting'
     },
     {
         title: 'Travel',
-        url: '/about'
+        url: '#travel'
     },
     {
         title: 'Adults Welcome',
-        url: '/contact'
+        url: '#adults-welcome'
     },
     {
         title: 'Art & Home Décor ',
-        url: '/services'
+        url: '#art-home-discovery'
     },
     {
         title: 'Space',
-        url: '/portfolio'
+        url: '#space'
     },
     {
         title: 'Pop Culture',
-        url: '/blog'
+        url: '#pop-culture'
     },
     {
         title: 'Toddlers',
-        url: '/contact'
+        url: '#toddlers'
     },
     {
         title: 'Real World Role Playing',
-        url: '/contact'
+        url: '#real-world-role-playing'
     },
 ]
 
@@ -117,8 +117,9 @@ export const sliderContent = {
     video: '/desktop.mp4'
 };
 
-export const cmsContent: { title: string, subTitle: string, content: ContentItem[] }[] = [
+export const cmsContent: { id: string; title: string, subTitle: string, content: ContentItem[] }[] = [
     {
+        id: 'gifting',
         title: 'Gifting',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
@@ -137,6 +138,7 @@ export const cmsContent: { title: string, subTitle: string, content: ContentItem
         ]
     },
     {
+        id: 'travel',
         title: 'Travel',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
@@ -155,6 +157,7 @@ export const cmsContent: { title: string, subTitle: string, content: ContentItem
         ]
     },
     {
+        id: 'adults-welcome',
         title: 'Adults welcome',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
@@ -167,6 +170,7 @@ export const cmsContent: { title: string, subTitle: string, content: ContentItem
         ]
     },
     {
+        id: 'art-home-discovery',
         title: 'Art & Home Décor',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
@@ -180,6 +184,7 @@ export const cmsContent: { title: string, subTitle: string, content: ContentItem
         ]
     },
     {
+        id: 'space',
         title: 'Space',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
@@ -192,6 +197,7 @@ export const cmsContent: { title: string, subTitle: string, content: ContentItem
         ]
     },
     {
+        id: 'pop-culture',
         title: 'Pop Culture',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
@@ -205,6 +211,7 @@ export const cmsContent: { title: string, subTitle: string, content: ContentItem
         ]
     },
     {
+        id: 'toddlers',
         title: 'Toddlers',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
@@ -223,6 +230,7 @@ export const cmsContent: { title: string, subTitle: string, content: ContentItem
         ]
     },
     {
+        id: 'real-world-role-playing',
         title: 'Real World Role Playing',
         subTitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         content: [
